@@ -16,7 +16,7 @@ const News = () => {
           <Col sm={4} className="mb-4" key={key}>
             <NewsCard
               content={news.description}
-              route={"#"}
+              route={"/news/" + news.id}
               title={news.title}
             />
           </Col>
@@ -36,48 +36,56 @@ const techNews = [
     description:
       "The latest release of React includes new features such as automatic batching, concurrent rendering, and a better developer experience.",
     datePosted: "2024-07-21",
+    id: 1,
   },
   {
     title: "AI Revolution in Healthcare: What's Next?",
     description:
       "AI-powered technologies are transforming healthcare, from diagnostics to personalized treatments. We explore what's next for AI in the medical field.",
     datePosted: "2024-07-19",
+    id: 2,
   },
   {
     title: "Apple Announces New M2 Chipset",
     description:
       "Apple introduces the next-generation M2 chipset with improved performance, energy efficiency, and powerful capabilities for professionals.",
     datePosted: "2024-07-18",
+    id: 2,
   },
   {
     title: "Google's Quantum Computing Breakthrough",
     description:
       "Google's latest achievement in quantum computing could potentially revolutionize industries like cybersecurity, cryptography, and machine learning.",
     datePosted: "2024-07-16",
+    id: 2,
   },
   {
     title: "Elon Musk's Latest SpaceX Mission",
     description:
       "SpaceX successfully launches another Starship mission, paving the way for future Mars exploration. Here's what we know about this ambitious mission.",
     datePosted: "2024-07-14",
+    id: 2,
   },
   {
     title: "5G and the Future of Mobile Connectivity",
     description:
       "With the rollout of 5G networks across the globe, we explore the impact of ultra-fast mobile connectivity on industries like gaming, healthcare, and autonomous vehicles.",
     datePosted: "2024-07-12",
+    id: 2,
   },
   {
     title: "Tech Giants Collaborate on Green Energy Solutions",
     description:
       "Tech companies like Microsoft, Google, and Amazon are teaming up to reduce carbon footprints and promote sustainable energy solutions for the tech industry.",
     datePosted: "2024-07-10",
+    id: 2,
   },
   {
     title: "Tesla's Full Self-Driving Cars Get Closer",
     description:
       "Tesla's Full Self-Driving technology is making significant progress, and the company is nearing its goal of fully autonomous vehicles on the road.",
     datePosted: "2024-07-08",
+    id: 2,
   },
 ];
 

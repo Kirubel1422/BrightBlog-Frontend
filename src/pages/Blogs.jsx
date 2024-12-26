@@ -19,7 +19,7 @@ const Blogs = () => {
               content={post.description}
               title={post.title}
               postedDate={post.datePosted}
-              route={"#"}
+              route={"/blogs/" + post.id}
               isNew={key % 3 === 0}
             />
           </Col>
@@ -40,30 +40,35 @@ const blogPosts = [
     description:
       "Many people wonder if React Native is easier to learn when compared to Flutter.",
     datePosted: "2024-07-23",
+    id: 1,
   },
   {
     title: "Introduction to JavaScript ES6 Features",
     description:
       "ES6 introduces many powerful features, such as arrow functions, template literals, and promises.",
     datePosted: "2024-08-01",
+    id: 1,
   },
   {
     title: "The Rise of Web3 and Blockchain",
     description:
       "Blockchain and Web3 technologies are revolutionizing the way we interact with digital assets and decentralized apps.",
     datePosted: "2024-06-15",
+    id: 1,
   },
   {
     title: "Building Scalable React Applications",
     description:
       "Learn best practices and tips for building large, scalable applications with React.",
     datePosted: "2024-07-10",
+    id: 1,
   },
   {
     title: "Design Principles in UI/UX",
     description:
       "Explore key principles in UI/UX design to create user-friendly and engaging web experiences.",
     datePosted: "2024-05-20",
+    id: 1,
   },
 ];
 

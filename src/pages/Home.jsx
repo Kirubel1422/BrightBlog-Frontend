@@ -1,13 +1,4 @@
-import {
-  Button,
-  Col,
-  FloatingLabel,
-  Form,
-  Image,
-  ListGroup,
-  Row,
-  Stack,
-} from "react-bootstrap";
+import { Button, Col, Image, ListGroup, Row, Stack } from "react-bootstrap";
 import { demo_blog_img } from "../assets";
 import MiniBlog from "../components/MiniBlog";
 
@@ -15,7 +6,7 @@ const Home = () => {
   return (
     <Row>
       <Col className="d-flex flex-column align-items-center gap-3 ">
-        <h4>News Headlines</h4>
+        <h4 className="text-secondary">News Headlines</h4>
         <ListGroup>
           <ListGroup.Item as="a">Cras justo odio</ListGroup.Item>
           <ListGroup.Item as="a">Dapibus ac facilisis in</ListGroup.Item>
@@ -40,15 +31,7 @@ const Home = () => {
       </Col>
 
       <Col>
-        <FloatingLabel
-          controlId="floatingInput"
-          label="Search Blog"
-          className="mb-3 "
-          style={{ fontSize: "16px" }}
-        >
-          <Form.Control type="text" placeholder="Node JS" />
-        </FloatingLabel>
-
+        <h4 className="text-secondary mb-4">Recent Blogs</h4>
         <Stack diretion="vertical" gap={3}>
           {blogPosts.map((blogPost) => (
             <>
@@ -97,7 +80,7 @@ const blogPosts = [
   },
 ];
 
-const demoBlog = `
+export const demoBlog = `
 <h1>Welcome to the Blog</h1>
 <p>This blog covers various topics in <strong>technology</strong>, <strong>design</strong>, and <strong>development</strong>.</p>
 <ul>
