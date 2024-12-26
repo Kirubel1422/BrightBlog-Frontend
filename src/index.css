@@ -1,3 +1,11 @@
 .bg-neutral {
   background-color: #ede8d0;
 }
+
+* {
+  font-family: "Poppins", serif;
+}
+
+body {
+  background-color: #faf9f6 !important;
+}
